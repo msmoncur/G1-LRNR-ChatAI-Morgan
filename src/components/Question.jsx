@@ -19,7 +19,7 @@ export default function Question({ questions }) {
         loop
         autoplay
       ></dotlottie-player>);
-      const response = await fetch("http://localhost:5000/api/evaluate", {
+      const response = await fetch("https://g1-lrnr-chatai.onrender.com//api/evaluate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
