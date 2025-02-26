@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(
 	cors({
-		origin: "https://g1-lrnr-chat-ai.vercel.app/",
+		origin: "https://g1-lrnr-chat-ai.vercel.app",
 	})
 );
 
