@@ -14,7 +14,7 @@ export default function Quiz() {
 		e.preventDefault();
 		console.log({ topic, expertise, numQuestions, style });
 
-		return fetch("hhttps://g1-lrnr-chatai.onrender.com/api/questions", {
+		return fetch("https://g1-lrnr-chatai.onrender.com/api/questions", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
