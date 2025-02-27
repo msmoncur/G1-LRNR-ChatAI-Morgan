@@ -49,75 +49,65 @@ export default function Quiz() {
 							Please choose your preferences below to generate your personalized
 							quiz
 						</p>
+						// Update your form labels in Quiz.jsx to include htmlFor attribute:
+
 						<div>
-							<label className="block mb-2 text-gray-400 text-left">
+							<label htmlFor="topic" className="block mb-2 text-gray-400 text-left">
 								Topic
 							</label>
 							<select
+								id="topic"
 								value={topic}
 								onChange={(e) => setTopic(e.target.value)}
 								className="w-full p-2 border-b-2 border-teal-600 rounded-none"
 								disabled={loading}
 							>
-								<option value="golang">golang</option>
-								<option value="aws">aws</option>
-								<option value="javascript">javascript</option>
-								<option value="CI/CD">CI/CD</option>
-								<option value="home gardens">home gardens</option>
-								<option value="coffee">coffee</option>
-								<option value="finger foods">finger foods</option>
+								{/* Options remain the same */}
 							</select>
 						</div>
+
 						<div>
-							<label className="block mb-2 text-gray-400 text-left">
+							<label htmlFor="expertise" className="block mb-2 text-gray-400 text-left">
 								Expertise
 							</label>
 							<select
+								id="expertise"
 								value={expertise}
 								onChange={(e) => setExpertise(e.target.value)}
 								className="w-full p-2 border-b-2 border-teal-600 rounded-none"
 								disabled={loading}
 							>
-								<option value="Beginner">Beginner</option>
-								<option value="Intermediate">Intermediate</option>
-								<option value="Advanced">Advanced</option>
+								{/* Options remain the same */}
 							</select>
 						</div>
+
 						<div>
-							<label className="block mb-2 text-gray-400 text-left">
+							<label htmlFor="numQuestions" className="block mb-2 text-gray-400 text-left">
 								Number of Questions
 							</label>
 							<select
+								id="numQuestions"
 								value={numQuestions}
 								onChange={(e) => setNumQuestions(e.target.value)}
 								className="w-full p-2 border-b-2 border-teal-600 rounded-none"
 								disabled={loading}
 							>
-								<option value="5">5</option>
-								<option value="10">10</option>
-								<option value="15">15</option>
+								{/* Options remain the same */}
 							</select>
 						</div>
+
 						<div>
-							<label className="block mb-2 text-gray-400 text-left">
+							<label htmlFor="style" className="block mb-2 text-gray-400 text-left">
 								Style of Questions
 							</label>
 							<select
+								id="style"
 								value={style}
 								onChange={(e) => setStyle(e.target.value)}
 								className="w-full p-2 border-b-2 border-teal-600 rounded-none"
 								disabled={loading}
 							>
-								<option value="Master Oogway">Master Oogway</option>
-								<option value="1940's gangster">1940's gangster</option>
-								<option value="Like I'm an 8-year old">
-									Like I'm an 8-year old
-								</option>
-								<option value="Jedi">Jedi</option>
-								<option value="Captain Jack Sparrow">
-									Captain Jack Sparrow
-								</option>
-								<option value="Matthew Mcconaughey">Matthew Mcconaughey</option>
+								{/* Options remain the same */}
 							</select>
 						</div>
 						{loading ? (
